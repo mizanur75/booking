@@ -20,7 +20,10 @@
         </nav>
       </div>
     </div>
+    
+    @if(Auth::user()->role_id == '1')
     <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#addModal"><i class="fa fa-plus"></i> Add New</button>
+    @endif
   </div>
 </div>
 <!-- Main content -->
